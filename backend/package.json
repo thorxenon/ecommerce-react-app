@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "nodemon -e ts,json src/server.ts",
+    "start-dev": "SET NODE_ENV=DEVELOPMENT& nodemon -e ts,json src/server.ts",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon -e ts,json src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
